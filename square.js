@@ -5,21 +5,18 @@ var square = require('./square'); // Here we require() the name of the file with
 console.log('The area of a square with a width of 4 is ' + square.area(4));
 
 module.exports = {
-  area: function(width) {
-    return width * width;
-  },
-
-  perimeter: function(width) {
-    return 4 * width;
-
-    console.log('First');
+    area: function(width) {
+      return width * width;
+    },
+  
+    perimeter: function(width) {
+      return 4 * width;
+    }
+    
+  };
+  
 console.log('Second');
-
 setTimeout(function() {
-  console.log('First');
-  }, 3000);
-console.log('Second');
-
-
-  }
-};
+    console.log('First');
+    }, 3000);
+ console.log('Second');
